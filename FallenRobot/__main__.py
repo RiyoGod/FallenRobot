@@ -72,13 +72,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 🥀
+*ʜᴇʏ, ǫᴛ* {}, 💗⛄ 
 
-*๏ ᴛʜɪs ɪs* {} !
-➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+*๏ ᴍᴇᴇᴛ* {} —  
+➻ ᴀ ᴄʜᴀʀᴍɪɴɢ, ᴅᴏᴍɪɴᴀɴᴛ, ᴀɴᴅ ᴜɴᴍᴀᴛᴄʜᴇᴅ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ, ᴍᴀᴅᴇ ᴛᴏ ᴄᴏᴍᴍᴀɴᴅ ʀᴇsᴘᴇᴄᴛ ᴀɴᴅ ᴋᴇᴇᴘ ᴄᴏɴᴛʀᴏʟ.  
+➻ ᴄᴏᴍʙɪɴɪɴɢ sᴡɪғᴛ ᴘᴏᴡᴇʀ, ᴇʟᴇɢᴀɴᴄᴇ, ᴀɴᴅ ᴀ sᴛʀᴏᴋᴇ ᴏғ ᴄʜᴀᴏs— ᴛʜᴇʀᴇ's ɴᴏᴛʜɪɴɢ ǫᴜɪᴛᴇ ʟɪᴋᴇ ᴍᴇ.  
 
-──────────────────
-*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+──────────────────  
+*๏ ᴄʟɪᴄᴋ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴜɴʟᴏᴄᴋ ᴍʏ ғᴇᴀᴛᴜʀᴇs.*  
 """
 
 buttons = [
@@ -203,7 +204,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
+                "CAACAgUAAxkBAAMLZ93XGZgI8lPJz9eN_AJCoVWy1KMAAvwNAAJ5lzhUInUl4B06WDI2BA"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
